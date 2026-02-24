@@ -8344,7 +8344,11 @@ It contains the following |key| and |value| pairs:
         <tbody>
             <tr>
                 <td>|isUserVerified|</td>
-                <td>Determines the [=authData/flags/UV|UV flag=] in [=authenticator data=] in the [=Virtual Authenticator|Virtual Authenticator's=] response.</td>
+                <td>
+                    Determines the result of [=User Verification=] performed on the
+                    [=Virtual Authenticator=]. If set to [TRUE], [=User Verification=] will always
+                    succeed. If set to [FALSE], it will fail.
+                </td>
                 <td>boolean</td>
             </tr>
         </tbody>
