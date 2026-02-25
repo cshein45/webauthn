@@ -8329,6 +8329,32 @@ is defined as follows:
     </table>
 </figure>
 
+The <dfn>Set User Verified Parameters</dfn> is a JSON [=Object=] passed to the [=remote end steps=] as |parameters|.
+It contains the following |key| and |value| pairs:
+
+<figure id="table-setUserVerifiedParameters" class="table">
+    <table class="data">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Value Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>|isUserVerified|</td>
+                <td>
+                    Determines the result of [=User Verification=] performed on the
+                    [=Virtual Authenticator=]. If set to [TRUE], [=User Verification=] will always
+                    succeed. If set to [FALSE], it will fail.
+                </td>
+                <td>boolean</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+
 The [=remote end steps=] are:
 
  1. If |parameters| is not a JSON [=Object=], return a [=WebDriver error=] with [=WebDriver error code=]
